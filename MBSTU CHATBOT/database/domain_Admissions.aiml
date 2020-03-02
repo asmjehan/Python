@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+                             <aiml version="1.0">
+
+                                     <meta name="language" content="en"/>
+
+                                             <category>
+                                             <pattern>NUMBER OF FACULTIES</pattern>
+                                             <template>Four facalties</template>
+</category>
+
+
+<category>
+<pattern>NAME OF FACULTIES</pattern>
+<template>1.ENGINEERING, 2.LIFE SCIENCE 3.SCIENCE 4.BUSINESS ADMINSTRATION</template>
+</category>
+
+<category>
+<pattern>DEPARTMENTS IN ENGINEERING FACULTY</pattern>
+<template>Computer Science and Engineering, Information and Communication Technology, Textile Engineering</template>
+</category>
+
+<category>
+<pattern>DEPARTMENTS IN SCIENCE FACULTY</pattern>
+<template>Chemistry, Physics, Mathematics, Statistics </template>
+</category>
+
+<category>
+<pattern>DEPARTMENTS IN LIFE SCIENCE</pattern>
+<template>PHARMACY , BIOCHEMISTRY AND MOLECULAR BIOLOGY, BIOTECHNOLOGY AND GENETIC ENGINEERING, FOOD TECHNOLOGY AND NUTRITION SCIENCE
+ENVIRONMENTAL SCIENCE AND RESOURCE MANAGEMENT, CRIMINOLOGY AND POLICE SCIENCE</template>
+</category>
+
+<category>
+<pattern>DEPARTMENTS IN BUSINESS ADMINSTRATION FACULTY</pattern>
+<template>ECOMNOMICS, BBA(ACCOUNTING,MANAGEMENT)</template>
+</category>
+
+<category>
+<pattern>A UNIT MARKS DISTRIBUTION</pattern>
+<template>ENG(10), MATH(30),PHY(30),CHEM(30). TOTAL=100</template>
+</category>
+
+<category>
+<pattern>MARKS DISTRIBUTION OF A UNIT </pattern>
+<template>ENG(10), MATH(30),PHY(30),CHEM(30). TOTAL=100</template>
+</category>
+
+<category>
+<pattern>B UNIT MARKS DISTRIBUTION</pattern>
+<template>ENG(10), BIO(30),PHY(30),CHEM(30). TOTAL=100</template>
+</category>
+
+<category>
+<pattern>C UNIT MARKS DISTRIBUTION</pattern>
+<template>MATH(30),PHY(30),CHEM(30), BIO(30) [ANY 3] + ENG(10). TOTAL=100</template>
+</category>
+
+<category>
+<pattern>MARKS DISTRIBUTION OF C UNIT </pattern>
+<template>MATH(30),PHY(30),CHEM(30), BIO(30) [ANY 3] + ENG(10). TOTAL=100</template>
+</category>
+
+<category>
+<pattern>D UNIT MARKS DISTRIBUTION</pattern>
+<template>SCIENCE:PHY(30),CHEM(30),MATH(30).[ANY 2] + ENG(40). TOTAL =100
+        HUMANITIES:ENG(40), BANGLA(30),ECONOMICS/CIVICS(30). TOTAL=100
+                BUSINESS:ENG(40),ACCOUNTING(30),BUSINESS(30). TOTAL=100 </template>
+</category>
+
+<category>
+<pattern>A UNIT PASS MARK</pattern>
+<template>MATH(14),PHY(14),CHEM(10), ENG(3).</template>
+</category>
+
+<category>
+<pattern>B UNIT PASS MARK</pattern>
+<template>BIOLOGY(14),PHY(10),CHEM(14), ENG(3).</template>
+</category>
+
+<category>
+<pattern>C UNIT PASS MARK</pattern>
+<template>MATH(10),PHY(10),CHEM(10),BIO(10),[ANY 3], ENG(3). TOTAL SHOULD BE 40</template>
+</category>
+
+<category>
+<pattern>D UNIT PASS MARK</pattern>
+<template>SCIENCE: ENG(16). TOTAL SHOULD BE =40
+        HUMANITIES:ENG(16). TOTAL SHOULD BE =40
+                BUSINESS:ENG(16). TOTAL SHOULD BE =40 </template>
+</category>
+
+<category>
+<pattern>HOW MANY DEPARTMENTS ARE THERE IN ENGINEERING</pattern>
+<template>CSE, ICT, TEXTILE</template>
+</category>
+
+<category>
+<pattern>WHAT ARE THE NAME OF FACULTIES</pattern>
+<template>1.ENGINEERING, 2.LIFE SCIENCE 3.SCIENCE 4.BUSINESS ADMINSTRATION</template>
+</category>
+
+<category>
+<pattern>FACULTY NAMES</pattern>
+<template>1.ENGINEERING, 2.LIFE SCIENCE 3.SCIENCE 4.BUSINESS ADMINSTRATION</template>
+</category>
+
+
+<category>
+<pattern>SEAT IN A UNIT</pattern>
+<template>Computer Science and Engineering(55), Information and Communication Technology(55), Textile Engineering(60)</template>
+</category>
+
+
+<category>
+<pattern>C UNIT TOTAL SEAT</pattern>
+<template>Chemistry(55), Physics(55), Mathematics(60), Statistics(60) </template>
+</category>
+
+<category>
+<pattern>B UNIT TOTAL SEAT</pattern>
+<template>PHARMACY(35), BIOCHEMISTRY AND MOLECULAR BIOLOGY(35), BIOTECHNOLOGY AND GENETIC ENGINEERING(55), FOOD TECHNOLOGY AND NUTRITION SCIENCE(55),
+ENVIRONMENTAL SCIENCE AND RESOURCE MANAGEMENT(55), CRIMINOLOGY AND POLICE SCIENCE(60)</template>
+</category>
+
+<category>
+<pattern>D UNIT TOTAL SEAT</pattern>
+<template>ECOMNOMICS(60-->COM(16),SCI(22),ARTS(22)), BBA(ACCOUNTING,MANAGEMENT)(60-->COM(38),SCI(15),ARTS(7))</template>
+</category>
+
+<category>
+<pattern>APPLICANT ELIGIBILITY</pattern>
+<template>SSC/HSC at least 3.0(without 4th subject). Total: 6.50 </template>
+</category>
+
+<category>
+<pattern>ADMISSION SEAT PLAN</pattern>
+<template> You can get the seat plan of admission from the link given below
+http://www.mbstu.ac.bd
+
+</template>
+</category>
+
+<category>
+<pattern>ADMISSION NOTICE</pattern>
+<template> You can get the NOTICE about admission from the link given below
+http://www.mbstu.ac.bd
+
+</template>
+</category>
+</aiml>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="/static/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/annyang/2.6.0/annyang.min.js"></script>
+  </head>
+  <body>
+
+    <div class="topnav">
+        <form id="myform" target="_blank" action = "http://www.google.com/search" method="GET">
+  	     <input type="text" name="q" placeholder="Google Search..">
+           </form>
+
+  <textarea id="textarea" name="textarea" readonly
+          rows="3" cols="30">Status: text to text is activated...
+  </textarea>
+
+  </div>
+    <h1> MBSTU INFORMATION CHAT BOT SYSTEM </h1>
+    <div>
+      <div id="chatbox">
+        <p class="botText"><span>Hello! My name is MBSTU bot. I will try my best to provide you
+information related to our University!</span></p>
+      </div>
+      <div id="userInput">
+        <input id="textInput" class="output" type="text" name="msg" placeholder="Type...">
+         <input id="buttonInput" type="submit" value="Send">
+          <button id="start-btn" title="Start">Start</button>
+          <button id="pause-record-btn" title="Pause Recording">stop</button>
+      </div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/annyang/2.6.0/annyang.min.js"></script>
+      <script>
+
+
+
+
+        var SpeechRecognition = window.webkitSpeechRecognition;
+
+
+          var recognition = new SpeechRecognition();
+          var Textbox = $('#textInput');
+          var instructions = $('instructions');
+
+          var Content = '';
+
+          recognition.continuous = true;
+          recognition.lang='en-IN';
+          recognition.onresult = function(event) {
+
+            var current = event.resultIndex;
+
+            var transcript = event.results[current][0].transcript;
+
+             Content += transcript;
+             Textbox.val(Content);
+
+            };
+          function CallButton()
+          {
+             document.getElementById("buttonInput").click();
+          }
+        recognition.onstart = function() {
+          instructions.text('Voice recognition is ON.');
+        }
+
+        recognition.onspeechend = function() {
+          document.getElementById('textarea').value = 'voice recognition stoppes...';
+        }
+
+        recognition.onerror = function(event) {
+          if(event.error == 'no-speech') {
+            instructions.text('Try again.');
+          }
+        }
+
+        $('#start-btn').on('click', function(e) {
+          if (Content.length) {
+            Content = '';
+          }
+          document.getElementById('textarea').value = 'Status: voice recognition started...';
+          recognition.start();
+
+         setTimeout(CallButton,8000);
+
+        });
+
+
+        $('#pause-record-btn').on('click', function(e) {
+          recognition.stop();
+          document.getElementById('textarea').value = 'Status: voice recognition stopped...';
+
+        });
+
+        Textbox.on('input', function() {
+          Content = $(this).val();
+        })
+
+
+
+        function getBotResponse() {
+          var rawText = $("#textInput").val();
+          var userHtml = '<p class="userText"><span>' + rawText + '</span></p>';
+          $("#textInput").val("");
+          $("#chatbox").append(userHtml);
+          document.getElementById('userInput').scrollIntoView({block: 'start', behavior:
+'smooth'});
+          $.get("/get", { msg: rawText }).done(function(data) {
+          if(data == false) data="Sorry I am still learning. I will tell you about that if I know";
+            var botHtml = '<p class="botText"><span>' + data + '</span></p>';
+            $("#chatbox").append(botHtml);
+            document.getElementById('userInput').scrollIntoView({block: 'start', behavior:
+'smooth'});
+          });
+
+
+        }
+
+
+        $("#textInput").keypress(function(e) {
+            if(e.which == 13) {
+                getBotResponse();
+            }
+        });
+        $("#buttonInput").click(function() {
+          getBotResponse();
+        })
+      </script>
+    </div>
+  </body>
+</html>

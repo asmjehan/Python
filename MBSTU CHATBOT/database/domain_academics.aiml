@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<aiml version="1.0">
+
+<meta name="language" content="en"/>
+
+<category>
+      <pattern>CHANCELLOR OF MAWLANA BHASHANI SCIENCE AND TECHNOLOGY UNIVERSITY</pattern>
+    <template> President Abdul Hamid
+</template>
+    </category>
+
+    <category>
+      <pattern>CHANCELLOR OF MAULANA BHASHANI SCIENCE AND TECHNOLOGY UNIVERSITY</pattern>
+    <template> President Abdul Hamid
+</template>
+    </category>
+
+   <category>
+      <pattern>VICE CHANCELLOR OF MAWLANA BHASHANI SCIENCE AND TECHNOLOGY UNIVERSITY</pattern>
+    <template> Professor Dr. Md. Alauddin
+</template>
+    </category>
+    <category>
+      <pattern>VICE CHANCELLOR OF MAULANA BHASHANI SCIENCE AND TECHNOLOGY UNIVERSITY</pattern>
+    <template> Professor Dr. Md. Alauddin
+</template>
+    </category>
+
+   <category>
+      <pattern>ACADEMICS</pattern>
+    <template> Academics consists of Programmes (Honors,Masters), Academic Calendar, Syllabus, Open Electives, Ordinances, Academic Council, Dean Academics, Board of Studies and Library.
+Link: http://www.mbstu.ac.bd/index.html
+</template>
+    </category>      
+
+   <category>
+      <pattern>UNDERGRADUATE PROGRAMMES</pattern>
+    <template> To know Different UG ( Honors ) Programmes available follow the link
+     Link: http://mbstu.ac.bd/index.html
+ 
+</template>
+    </category>      
+
+   <category>
+      <pattern>UG PROGRAMMES</pattern>
+    <template> To know Different UG ( Honors ) Programmes available follow the link
+     Link: http://mbstu.ac.bd/index.html
+ 
+</template>
+    </category>
+
+   <category>
+      <pattern>POSTGRADUATE PROGRAMMES</pattern>
+    <template>To know Different PG Programmes available follow the link 
+
+    Link: http://mbstu.ac.bd/index.html
+</template>
+    </category>      
+
+
+   <category>
+      <pattern>PG PROGRAMMES</pattern>
+    <template>To know Different PG Programmes available follow the link 
+
+    https://mbstu.ac.bd/index.html
+</template>
+    </category>      
+
+
+   <category>
+      <pattern>SYLLEBUS 1ST-1ST</pattern>
+    <template>Notice - Guidelines for PG Course Re-registration.You can read the full notice from the given link. 
+ http://www.mbstu.ac.bd/Docs/Notice%20Board/2018/Notice%20for%20Re-registration%20of%20back-log%20courses.pdf
+
+</template>
+    </category>
+
+</aiml>
